@@ -22,7 +22,7 @@ driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 10)
 
 # UBYS giriş sayfasına git
-driver.get("https://portal.convert-control.de/en/user/login?current=/en/user/112")  # Giriş URL'sini doğru yaz
+driver.get("https://portal************")  # Giriş URL'sini doğru yaz
 # Kullanıcı adı ve şifre kutularını bul
 username_input = driver.find_element(By.ID, "edit-name")  # Gerçek ID'yi kontrol et
 password_input = driver.find_element(By.ID, "edit-pass")
@@ -36,7 +36,7 @@ password_input.send_keys(Keys.RETURN)  # Enter'a basarak giriş yap
 time.sleep(5) 
 
 # Transkript sayfasına git
-driver.get("https://portal.convert-control.de/en/plant/37/yield")  # Gerçek URL'yi gir
+driver.get("https://portal**********")  # Gerçek URL'yi gir
 
 #Sayfanın yüklenmesini bekle
 time.sleep(5)
