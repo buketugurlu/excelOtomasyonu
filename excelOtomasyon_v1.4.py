@@ -28,8 +28,8 @@ username_input = driver.find_element(By.ID, "edit-name")  # Gerçek ID'yi kontro
 password_input = driver.find_element(By.ID, "edit-pass")
 
 # Kullanıcı adı ve şifreyi gir
-username_input.send_keys("entegro_tr")
-password_input.send_keys("Entegro2020*")
+username_input.send_keys("*********")
+password_input.send_keys("*********")
 password_input.send_keys(Keys.RETURN)  # Enter'a basarak giriş yap
 
 # Sayfanın yüklenmesini bekleyin
