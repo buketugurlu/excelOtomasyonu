@@ -24,8 +24,8 @@ wait = WebDriverWait(driver, 10)
 # UBYS giriş sayfasına git
 driver.get("https://portal************")  # Giriş URL'sini doğru yaz
 # Kullanıcı adı ve şifre kutularını bul
-username_input = driver.find_element(By.ID, "edit-name")  # Gerçek ID'yi kontrol et
-password_input = driver.find_element(By.ID, "edit-pass")
+username_input = driver.find_element(By.ID, "****name")  # Gerçek ID'yi kontrol et
+password_input = driver.find_element(By.ID, "****pass")
 
 # Kullanıcı adı ve şifreyi gir
 username_input.send_keys("*********")
@@ -43,29 +43,29 @@ time.sleep(5)
 
 # **1. YIL Seçimi (Eğer gerekliyse)**
 try:
-    year_element = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='year-selection']//a[contains(text(), '2024')]")))
+    year_element = wait.until(EC.element_to_be_clickable((By.XPATH, "//div[@class='*****']//a[contains(text(), '2024')]")))
     year_element.click()
     time.sleep(2)  # Sayfanın güncellenmesini bekleyelim
 except:
     print("Yıl seçimi gerekli değil veya bulunamadı.")
 
 # 2.Ocak ayını seç**
-december_element = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@data-month-selection='12']")))
+december_element = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[*******]")))
 december_element.click()
 time.sleep(2)  # Sayfanın yenilenmesini bekleyelim
 
 # **Sayfa yenilendiği için öğeyi tekrar bul**
-december_element = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[@data-month-selection='12']")))
+december_element = wait.until(EC.element_to_be_clickable((By.XPATH, "//a[********]")))
 december_element.click()
 time.sleep(3)
 
 
 # Tablodaki tüm satırları seç (tbody içindeki tr etiketleri)
-rows = driver.find_elements(By.CSS_SELECTOR, "tbody tr")
+rows = driver.find_elements(By.*****, "tbody tr")
 
 data = []
 for row in rows:
-    cells = row.find_elements(By.TAG_NAME, "td")
+    cells = row.find_elements(By.******, "td")
     if len(cells) >= 2:  # En az 3 sütun olmalı
         label = cells[0].text.strip()  # İlk sütun: LABEL
         yield_value = cells[1].text.strip()  # İkinci sütun: YIELD
