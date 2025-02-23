@@ -87,7 +87,7 @@ for row in rows:
 
 # Veriyi Excel'e kaydet
 df = pd.DataFrame(data)
-df.to_excel("yield_cactus_2024aralık.xlsx", index=False)
+df.to_excel("********_2024aralık.xlsx", index=False)
 
 print("Tablo başarıyla kaydedildi!")
 
