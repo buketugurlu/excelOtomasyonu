@@ -92,7 +92,7 @@ df.to_excel("yield_cactus_2024aralık.xlsx", index=False)
 print("Tablo başarıyla kaydedildi!")
 
 # Kullanıcının İndirilenler klasörünü al
-downloads_folder = os.path.join(os.path.expanduser("~"), "Downloads", "yield_cactus_2024aralık.xlsx")
+downloads_folder = os.path.join(os.path.expanduser("~"), "Downloads", "*******_2024aralık.xlsx")
 
 # Excel dosyasını İndirilenler klasörüne kaydet
 df.to_excel(downloads_folder, index=False)
